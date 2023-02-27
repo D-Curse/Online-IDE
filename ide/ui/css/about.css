@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap');
+
+body{
+  background-image: url("img/banner5.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+h1{
+  font-family: 'Teko', sans-serif;
+  font-size: 35px;
+}
+
+p{
+  font-family: 'Popping',sans-serif;
+}
+/*
+.cards{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10%;
+  width: 80%;
+  height: 550px;
+  margin-left: 5%;
+}
+*/
+.cards{
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  gap: 5%;
+}
+
+.card{
+  width: 250px;
+  height: 135px;
+  padding: 0.7rem;
+  background: rgba(198, 198, 198, 0.34);
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  border-bottom: 3px solid rgba(255,255,255,0.440);
+  border-left: 2px rgba(255,255,255,0.545)outset;
+  box-shadow: -40px 50px 30px rgba(0,0,0,0.280);
+  transform: skewX(10deg);
+  overflow: hidden;
+  transition: .4s;
+  color: white;
+}
+
+.card:hover{
+  height: 254px;
+  transform: skew(0deg);
+}
+
+.align {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-self: flex-start;
+}
+
+.red{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff605c;
+  box-shadow: -5px 5px 5px rgba(0,0,0,0.280);
+}
+
+.yellow{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffbd44;
+  box-shadow: -5px 5px 5px rgba(0,0,0,0.280);
+}
+
+.green{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00ca4e;
+  box-shadow: -5px 5px 5px rgba(0,0,0,0.280);
+}
+
+.card h1 {
+  text-align: center;
+  margin: 1.3rem;
+  color: rgb(218,244,237);
+  text-shadow: -10px 5px 10px rgba(0,0,0,0.573);
+}
+
+
+.btns{
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  gap: 50%;
+}
+
+.btn{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100px;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.btn a {
+  font-family: 'Teko', sans-serif;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 90px;
+  transition: all 0.4s ease;
+}
+
+.btn a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.btn a:hover {
+  color: #483EA6;
+  background: #fff;
+  opacity: 85%;
+  border-radius: 45px;
+}
+

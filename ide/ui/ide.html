@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compile It!!!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <a href="nav.html">CURSED IDE (Compile It)</a>
+    </div>
+    <div class="control-panel">
+        Select Language:
+        &nbsp;&nbsp;      <!-- NON BREAKING SPACE --> 
+        <select id="languages" class="languages" onChange="changeLanguage()">
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="python">Python</option>
+            <option value="php">PHP</option>
+            <option value="node">Node JS</option>
+        </select>
+    </div>
+    <div class="editor" id="editor"></div>
+
+    <div class="button-container">
+       <!-- <button class="btn" onClick="executeCode()">RUN</button>-->
+        <button class="btn" onClick="executeCode()" style="--clr:#39FF14" ><span>RUN</span><i></i></button>
+    </div>
+    <div class="output"></div>
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/lib/ace.js"></script>
+    <script src="js/lib/theme-monokai.js"> </script>
+    <script src="js/ide.js"></script>
+</body>
+</html>
