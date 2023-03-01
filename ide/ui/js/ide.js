@@ -18,7 +18,7 @@ function changeLanguage() {
 
 function executeCode(){
     $.ajax({
-        url: "/ide/app/php/compiler.php",
+        url: "/ide/app/compiler.php",
 
         method: "POST",
 
